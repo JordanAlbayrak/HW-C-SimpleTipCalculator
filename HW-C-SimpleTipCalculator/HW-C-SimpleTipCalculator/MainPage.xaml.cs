@@ -81,7 +81,7 @@ namespace HW_C_SimpleTipCalculator
                 totalTip = double.Parse(entGuest.Text) * double.Parse(entTip.Text);
                 lblResultTip.Text = totalTip.ToString();
 
-                totalBill = double.Parse(entBill.Text) + double.Parse(entTip.Text);
+                totalBill = double.Parse(entBill.Text) + totalTip;
                lblResultBill.Text = totalBill.ToString();
 
             }
